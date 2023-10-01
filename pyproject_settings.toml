@@ -1,5 +1,9 @@
 # ---------- Configurations ---------- #
 
+[tool.bandit]
+exclude_dirs = ["tests", "scripts"]
+skips = ["B311"]
+
 [tool.black]
 line-length = 120
 skip-string-normalization = true

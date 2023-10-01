@@ -63,12 +63,3 @@ repos:
     hooks:
       - id: mypy
         args: ["--install-types", "--non-interactive"]
-  - repo: local
-    hooks:
-      - id: pytest
-        name: pytest
-        entry: pytest
-        language: system
-        types: [python]
-        pass_filenames: false
-        always_run: true

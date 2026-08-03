@@ -1,0 +1,10 @@
+# A .codespellrc rather than [tool.codespell], because this repo is a template
+# and carries no pyproject.toml of its own — pyproject_settings.toml is the
+# reference document, not an installed project's config, so codespell never
+# reads it.
+#
+# All four are real tokens in that document: astroid is pylint's AST library,
+# and aNULL/ANULL/anull are OpenSSL cipher-suite names.
+[codespell]
+ignore-words-list = astroid,aNULL,ANULL,anull
+check-filenames = true
